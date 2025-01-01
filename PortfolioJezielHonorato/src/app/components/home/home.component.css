@@ -3,6 +3,7 @@ main {
   grid-template-columns: 1fr 1fr;
   background-color: var(--color-background);
   align-items: center;
+  height: 100vh;
   gap: 1rem;
 
   .image-container {
@@ -14,6 +15,12 @@ main {
     img {
       max-width: 100%;
       height: auto;
+      padding: 2rem;
+      transition: all 0.5s ease;
+      border-radius: 100%;
+      opacity: 0;
+      animation: disappear 1ms ease-in-out;
+      animation-timeline: view();
     }
   }
 
@@ -104,5 +111,16 @@ main {
 
   100% {
     left: 100%;
+  }
+}
+
+@keyframes disappear {
+  50% {
+    opacity: 1;
+    max-width: 100%;
+  }
+  to {
+    opacity: 0;
+    max-width: 30%;
   }
 }
