@@ -17,7 +17,7 @@ export class HomeComponent {
       .writeText(text)
       .then(() => {
         parent.classList.add('active');
-        content.innerText = 'Copiado';
+        content.innerText = 'copiado para a área de transferência';
         setTimeout(() => {
           parent.classList.remove('active');
           content.innerText = text;

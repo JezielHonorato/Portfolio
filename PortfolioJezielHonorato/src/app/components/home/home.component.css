@@ -19,18 +19,23 @@ main {
 
   .infomations-about-me {
     display: grid;
+    padding: 1rem;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1rem;
 
     .title {
-      display: flex;
-      justify-content: center;
+      line-height: 1.5;
       color: var(--color-text);
+
+      h1 {
+        font-size: xxx-large;
+      }
     }
 
     .short-text {
       color: var(--color-text);
       text-indent: 1rem;
+      text-align: justify;
     }
 
     .social-media {
