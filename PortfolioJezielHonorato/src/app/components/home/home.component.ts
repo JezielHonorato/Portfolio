@@ -8,12 +8,20 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
-  copyToClipboard(content: HTMLElement) {
+  copyContact(content: HTMLElement) {
+    const parent = content.closest('.content-social-media');
+    if (!parent) return;
+
     const text = content.innerText;
     navigator.clipboard
       .writeText(text)
       .then(() => {
-        alert(`Texto copiado: ${text}`);
+        parent.classList.add('active');
+        content.innerText = 'Copiado';
+        setTimeout(() => {
+          parent.classList.remove('active');
+          content.innerText = text;
+        }, 2000);
       })
       .catch((err) => {
         console.error('Erro ao copiar o texto: ', err);
