@@ -20,7 +20,7 @@ main {
       border-radius: 100%;
       opacity: 0;
       animation: disappear 1ms ease-in-out;
-      animation-timeline: view();
+      animation-timeline: scroll();
     }
   }
 
@@ -115,7 +115,7 @@ main {
 }
 
 @keyframes disappear {
-  50% {
+  from {
     opacity: 1;
     max-width: 100%;
   }
