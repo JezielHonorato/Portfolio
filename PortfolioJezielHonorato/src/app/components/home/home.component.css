@@ -5,6 +5,7 @@ main {
   align-items: center;
   height: 100vh;
   gap: 1rem;
+  padding: 1rem;
 
   .image-container {
     width: 100%;
