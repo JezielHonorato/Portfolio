@@ -1,5 +1,4 @@
 main{
-  height: 100vh;
   padding: 1rem;
   background-color: black;
 
@@ -16,5 +15,12 @@ main{
     background-color: var(--color-background);
     color: var(--color-text);
     border-radius: 20px;
+
+    button {
+      color: var(--color-text);
+      background-color: black;
+      padding: 1rem;
+      margin: 1rem;
+    }
   }
 }
