@@ -1,8 +1,8 @@
-main{
+main {
   padding: 1rem;
   background-color: black;
 
-  .title{
+  .title {
     display: flex;
     margin-top: 5rem;
     color: var(--color-text);
@@ -16,11 +16,33 @@ main{
     color: var(--color-text);
     border-radius: 20px;
 
-    button {
-      color: var(--color-text);
-      background-color: black;
-      padding: 1rem;
-      margin: 1rem;
+    .buttons {
+      display: flex;
+
+      button {
+        color: var(--color-text);
+        background-color: black;
+        padding: 1rem;
+        margin: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+
+        svg {
+          height: 1rem;
+        }
+
+        span {
+          display: inline-block;
+        }
+      }
+
+      button:hover {
+        background-color: #0056b3;
+        color: var(--color-text-hover);
+      }
     }
   }
 }

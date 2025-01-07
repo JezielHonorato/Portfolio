@@ -9,6 +9,7 @@
   -webkit-appearance: none;
   appearance: none;
   outline: none;
+  text-decoration: none;
 }
 
 ::-webkit-scrollbar {

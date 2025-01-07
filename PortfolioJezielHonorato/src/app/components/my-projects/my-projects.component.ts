@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './my-projects.component.css'
 })
 export class MyProjectsComponent {
-
+  DontExist(){
+    alert ('Função não criada')
+  }
 }
