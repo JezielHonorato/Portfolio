@@ -45,7 +45,7 @@ main {
       }
 
       button:hover {
-        background-color: #0056b3;
+        background-color: var(--color-hover);
         color: var(--color-text-hover);
       }
     }
